@@ -1,0 +1,15 @@
+body {
+  padding: 60px;
+  background-color: #333;
+  color: aliceblue;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+input {
+  color: #333;
+  font-size: 1.2rem;
+  width: 100%;
+}

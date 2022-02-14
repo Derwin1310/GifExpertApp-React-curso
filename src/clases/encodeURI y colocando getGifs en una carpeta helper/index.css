@@ -2,6 +2,9 @@ body {
   padding: 60px;
   background-color: #333;
   color: aliceblue;
+}
+
+* {
   font-family: sans-serif;
 }
 
