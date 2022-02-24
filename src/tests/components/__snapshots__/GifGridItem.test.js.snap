@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in Gif Grid Item should show the component correctly 1`] = `
+<div
+  className="card animate__animated animate__backInLeft animate__delay-2s"
+>
+  <img
+    alt="Very nice title"
+    src="https://localhost/something.jpg"
+  />
+  <p>
+    Very nice title
+  </p>
+</div>
+`;

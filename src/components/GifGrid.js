@@ -1,13 +1,14 @@
 import React from 'react';
 import {useFetchGifs} from '../hooks/useFetchGifs';
 import {GifGridItem} from './GifGridItem';
+import PropTypes from 'prop-types';
 
 export const GifGrid = ({category}) => {
 	const {data: imgs, loading} = useFetchGifs(category);
 
 	return (
 		<>
-			<h3 className='card animate__animated animate__bounceInRight animate__delay-5s'>
+			<h3 className='animate__animated animate__bounceInRight'>
 				{category}
 			</h3>
 			{loading && <h4 className='animate__animated animate__flash'>Loading...</h4>}
@@ -18,4 +19,8 @@ export const GifGrid = ({category}) => {
 			</div>
 		</>
 	);
+};
+
+GifGrid.propTypes = {
+	category: PropTypes.string.isRequired,
 };
