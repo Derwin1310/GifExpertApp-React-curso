@@ -2,7 +2,7 @@ body {
   /* padding: 60px; */
   background-color: #333;
   color: aliceblue;
-  font-family: sans-serif;
+  font-family: 'Varela Round', sans-serif;
   display: flex;
   justify-content: center;
 }
@@ -20,17 +20,18 @@ input {
 
 .card-grid {
   /* box-sizing: border-box; */
-  display: grid;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
   /* grid-template-columns: repeat(minmax(250px, 1fr) ); */
   gap: 1rem;
   max-width: 800px;
 }
 
 .card {
-  height: fit-content;
+  width: 15rem;
+  height: 15rem;
   align-content: center;
   border: 1px solid grey;
   border-radius: 6px;
@@ -56,10 +57,19 @@ input {
   align-items: center;
   width: 100%;
   margin: 0;
+  flex-wrap: wrap;
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .card-grid {
+    display: grid;
     grid-template-columns: 1fr;
   }
-} */
+}
+
+@media screen and (max-width: 800px) {
+  .card-grid {
+    display: flex;
+    justify-content: center;
+  }
+}
