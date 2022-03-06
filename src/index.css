@@ -18,6 +18,10 @@ input {
   box-sizing: border-box;
 }
 
+input::placeholder {
+  text-align: center;
+}
+
 .card-grid {
   /* box-sizing: border-box; */
   display: flex;
@@ -27,12 +31,12 @@ input {
   /* grid-template-columns: repeat(minmax(250px, 1fr) ); */
   gap: 1rem;
   max-width: 800px;
+  justify-content: space-between;
 }
 
 .card {
   width: 15rem;
   height: 15rem;
-  align-content: center;
   border: 1px solid grey;
   border-radius: 6px;
 }
